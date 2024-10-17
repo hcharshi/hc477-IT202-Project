@@ -1,0 +1,20 @@
+# Create the Product
+http://localhost/your-project-folder/addMassageBallSetProduct.test.php?productCode=MB001&productName=Massage%20Ball&description=Small%20massage%20ball&color=Blue&categoryID=1&wholesalePrice=5.00&listPrice=10.00
+http://localhost/your-project-folder/addMassageBallSetProduct.test.php?productCode=RB001&productName=Resistance%20Band&description=Light%20resistance%20band&color=Green&categoryID=2&wholesalePrice=2.50&listPrice=5.00
+
+# Verify Create Product
+http://localhost/your-project-folder/listMassageBallSetProducts.test.php
+
+# Update Product
+http://localhost/your-project-folder/changeMassageBallSetProduct.test.php?productCode=MB001&productName=Advanced%20Massage%20Ball&description=Updated%20description&color=Green&wholesalePrice=6.00&listPrice=12.00
+http://localhost/your-project-folder/changeMassageBallSetProduct.test.php?productCode=RB001&productName=Premium%20Resistance%20Band&description=Updated%20resistance%20band%20description&color=Red&wholesalePrice=3.00&listPrice=6.00
+
+# Verify Update Product
+http://localhost/your-project-folder/listMassageBallSetProducts.test.php
+
+# Delete Product
+http://localhost/your-project-folder/removeMassageBallSetProduct.test.php?productCode=MB001
+http://localhost/your-project-folder/removeMassageBallSetProduct.test.php?productCode=RB001
+
+# Verify Delete Product
+http://localhost/your-project-folder/listMassageBallSetProducts.test.php
