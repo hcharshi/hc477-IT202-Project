@@ -1,12 +1,6 @@
 <?php
 session_start();
-
-if (isset($_SESSION['login']) && $_SESSION['login'] === true) {
-    header('Location: welcome.php');
-    exit();
-}
-
-include 'database.php';
+include 'connect.php';
 
 $error = '';
 
@@ -21,13 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($user && hash('sha256', $password) === $user['password']) {
-        // Set session variables
         $_SESSION['login'] = true;
         $_SESSION['firstName'] = $user['firstName'];
         $_SESSION['lastName'] = $user['lastName'];
         $_SESSION['emailAddress'] = $user['emailAddress'];
         $_SESSION['pronouns'] = $user['pronouns'];
-
         header('Location: welcome.php');
         exit();
     } else {
@@ -51,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p style="color: red;"><?php echo htmlspecialchars($error); ?></p>
     <?php endif; ?>
 
-    <form method="post" action="index.php">
+    <form method="POST" action="login.php">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
 
