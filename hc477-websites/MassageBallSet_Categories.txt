@@ -1,5 +1,5 @@
 # Create the Category
-http://localhost/hc477-websites/addMassageBallSetCategory.test.php?categoryCode=FIT&categoryName=Fitness%20Tracker&aisleNumber=1
+http://localhost:8000/addMassageBallSetcategory.test.php?categoryCode=FIT&categoryName=Fitness%20Tracker&aisleNumber=1
 http://localhost/hc477-websites/addMassageBallSetCategory.test.php?categoryCode=RES&categoryName=Resistance%20Bands&aisleNumber=2
 
 # Verify Create Category

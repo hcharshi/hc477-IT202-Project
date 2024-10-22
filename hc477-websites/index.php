@@ -1,12 +1,11 @@
 <?php
 session_start();
+include 'database.php';
 
 if (isset($_SESSION['login']) && $_SESSION['login'] === true) {
     header('Location: welcome.php');
     exit();
 }
-
-include 'database.php';
 
 $error = '';
 
