@@ -1,19 +1,19 @@
 # Create the Category
-http://localhost:8000/addMassageBallSetcategory.test.php?categoryCode=FIT&categoryName=Fitness%20Tracker&aisleNumber=1
-http://localhost/hc477-websites/addMassageBallSetCategory.test.php?categoryCode=RES&categoryName=Resistance%20Bands&aisleNumber=2
+http://localhost:8000/addMassageBallSetcategory.test.php?categoryCode=FIT&categoryName=Fitness%20Tracker&aisleNumber=2
+http://localhost:8000/addMassageBallSetCategory.test.php?categoryCode=RES&categoryName=Resistance%20Bands&aisleNumber=2
 
 # Verify Create Category
-http://localhost/hc477-websites/listMassageBallSetCategories.test.php
+http://localhost:8000/listMassageBallSetCategories.test.php
 
 # Update Category
-http://localhost/hc477-websites/changeMassageBallSetCategory.test.php?categoryCode=FIT&categoryName=Advanced%20Fitness%20Tracker&aisleNumber=10
-http://localhostf/hc477-websites/changeMassageBallSetCategory.test.php?categoryCode=RES&categoryName=Premium%20Resistance%20Bands&aisleNumber=20
+http://localhost:8000/changeMassageBallSetCategory.test.php?categoryCode=FIT&categoryName=Advanced%20Fitness%20Tracker&aisleNumber=10
+http://localhost:8000/changeMassageBallSetCategory.test.php?categoryCode=RES&categoryName=Premium%20Resistance%20Bands&aisleNumber=20
 
 # Verify Update Category
-http://localhost/hc477-websites/listMassageBallSetCategories.test.php
+http://localhost:8000/listMassageBallSetCategories.test.php
 
 # Delete Category
-http://localhost/hc477-websites/removeMassageBallSetCategory.test.php?categoryCode=RES
+http://localhost:8000/removeMassageBallSetCategory.test.php?categoryCode=RES
 
 # Verify Delete Category
-http://localhost/hc477-websites/listMassageBallSetCategories.test.php
+http://localhost:8000/listMassageBallSetCategories.test.php
